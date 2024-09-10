@@ -31,3 +31,5 @@ class UserPostsView(generics.ListAPIView):
     def get_queryset(self):
         user_id = self.kwargs['user_id']
         return Post.objects.filter(user_id=user_id)
+class Login(request):
+    return render(request, 'pages/login.html')
