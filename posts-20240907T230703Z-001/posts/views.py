@@ -34,16 +34,16 @@ class UserPostsView(generics.ListAPIView):
 
 
 class Login(request):
-    return render(request, 'pages/login.html')
+    return render(request, 'posts/login.html')
     
 class Post_details(request):
-    return render(request, 'pages/post_details.html')
+    return render(request, 'posts/post_details.html')
 
 class Signup(request):
-    return render(request, 'pages/signup.html')
+    return render(request, 'posts/signup.html')
 
 class Post_list(request):
-    return render(request, 'pages/post_list.html')
+    return render(request, 'posts/post_list.html')
 
 class Profile_update(request):
-    return render(request, 'pages/profile_update.html')
+    return render(request, 'posts/profile_update.html')
